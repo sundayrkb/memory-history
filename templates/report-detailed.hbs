@@ -1,0 +1,11 @@
+# {{projectName}} - Detailed Report
+
+{{#each sessions}}
+## Session: {{title}} ({{date}})
+**Duration:** {{duration}} | **Tokens:** {{tokens}} | **Cost:** ${{cost}}
+
+### Messages
+{{#each messages}}
+- [{{role}}] {{content}}
+{{/each}}
+{{/each}}

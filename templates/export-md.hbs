@@ -1,0 +1,15 @@
+# {{projectName}} - Session Export
+
+**Exported:** {{exportDate}}
+**Project:** {{projectDir}}
+**Sessions:** {{sessionCount}}
+
+{{#each sessions}}
+## {{title}} ({{date}})
+**Tokens:** {{tokens}} | **Cost:** ${{cost}}
+
+{{#each messages}}
+### {{role}}
+{{content}}
+{{/each}}
+{{/each}}

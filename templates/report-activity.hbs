@@ -1,0 +1,19 @@
+# {{projectName}} - Activity Report
+
+**Period:** {{startDate}} to {{endDate}}
+**Total Sessions:** {{sessionCount}}
+**Total Tokens:** {{totalTokens}}
+**Total Cost:** ${{totalCost}}
+
+## Daily Activity
+{{#each dailyStats}}
+### {{date}}
+- Sessions: {{sessionCount}}
+- Tokens: {{tokens}}
+- Cost: ${{cost}}
+{{/each}}
+
+## Top Sessions by Tokens
+{{#each topSessions}}
+- **{{title}}** - {{tokens}} tokens (${{cost}})
+{{/each}}

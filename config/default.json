@@ -1,0 +1,32 @@
+{
+  "projectsRoot": "~/openidea/projects",
+  "opencodeDb": "~/.local/share/opencode/opencode.db",
+  "defaultProject": null,
+  "autoUpdateHandoff": true,
+  "compaction": {
+    "auto": true,
+    "prune": true,
+    "keepTokens": 2000,
+    "bufferTokens": 10000
+  },
+  "ollama": {
+    "host": "http://localhost:11434",
+    "model": "llama3.1:8b",
+    "enabled": true
+  },
+  "export": {
+    "defaultFormat": "json",
+    "outputDir": "~/memory-history-exports"
+  },
+  "sync": {
+    "enabled": false,
+    "targets": ["gist", "file"]
+  },
+  "report": {
+    "templateDir": "~/.config/memory-history/templates"
+  },
+  "bootstrapPlugin": {
+    "autoCreate": true,
+    "path": "~/.config/opencode/plugins/project-context-bootstrap.js"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "@opencode/memory-history",
+  "version": "1.0.0",
+  "description": "Universal memory/history management for OpenCode projects",
+  "type": "module",
+  "bin": {
+    "memory-history": "./bin/memory-history.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "link": "npm link"
+  },
+  "keywords": [
+    "opencode",
+    "memory",
+    "history",
+    "session",
+    "compaction",
+    "handoff"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.0.0",
+    "better-sqlite3": "^9.0.0",
+    "handlebars": "^4.7.8",
+    "yaml": "^2.0.0",
+    "chalk": "^5.0.0",
+    "octokit": "^4.0.0",
+    "ora": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,16 @@
+# {{projectName}} - Session Summary
+
+**Period:** {{startDate}} to {{endDate}}
+**Sessions:** {{sessionCount}}
+**Total Tokens:** {{totalTokens}}
+**Total Cost:** ${{totalCost}}
+
+## Recent Activity
+{{#each recentSessions}}
+- **{{title}}** ({{date}}) - {{tokens}} tokens, ${{cost}}
+{{/each}}
+
+## Key Decisions
+{{#each decisions}}
+- {{this}}
+{{/each}}
